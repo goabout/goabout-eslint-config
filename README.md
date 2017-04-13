@@ -6,6 +6,8 @@ The main differences are
 
 * semicolons are not necessary;
 * Most errors changed to warnings. Because "errors" prevent webpack-compiled code from running and hence provide unnecessary point of distraction while writing the code. Warnings are still visible and can be fixed later;
+* Added config options specific to [Adonis.js](http://adonisjs.com/) and [Vue.js](https://vuejs.org/)
+* Added config globals specific to [Mocha](https://mochajs.org/) and some other associated unit test frameworks
 
 ## Usage
 
@@ -14,7 +16,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+. It
 1. Install the correct versions of each package using `npm` by adding in packages.json:
 
   ```
-    "goabout-eslint-config": "...path to github repo..."
+    "goabout-eslint-config": "...path to github repo..." //Will be published to npm later
   ```
 
 
