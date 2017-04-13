@@ -25,10 +25,10 @@ module.exports = {
 
     // require space before/after arrow function's arrow
     // http://eslint.org/docs/rules/arrow-spacing
-    'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': ['warn', { before: true, after: true }],
 
     // verify super() callings in constructors
-    'constructor-super': 'error',
+    'constructor-super': 'warn',
 
     // enforce the spacing around the * in generator functions
     // http://eslint.org/docs/rules/generator-star-spacing
@@ -40,7 +40,7 @@ module.exports = {
 
     // disallow arrow functions where they could be confused with comparisons
     // http://eslint.org/docs/rules/no-confusing-arrow
-    'no-confusing-arrow': ['error', {
+    'no-confusing-arrow': ['warn', {
       allowParens: true,
     }],
 
@@ -131,11 +131,11 @@ module.exports = {
 
     // suggest using the spread operator instead of .apply()
     // http://eslint.org/docs/rules/prefer-spread
-    'prefer-spread': 'error',
+    'prefer-spread': 'warn',
 
     // suggest using template literals instead of string concatenation
     // http://eslint.org/docs/rules/prefer-template
-    'prefer-template': 'error',
+    'prefer-template': 'warn',
 
     // disallow generator functions that do not have yield
     // http://eslint.org/docs/rules/require-yield
@@ -159,10 +159,10 @@ module.exports = {
 
     // enforce usage of spacing in template strings
     // http://eslint.org/docs/rules/template-curly-spacing
-    'template-curly-spacing': 'error',
+    'template-curly-spacing': 'warn',
 
     // enforce spacing around the * in yield* expressions
     // http://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['warn', 'after']
   }
 }

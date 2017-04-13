@@ -9,7 +9,7 @@ module.exports = {
 
     // require all requires be top-level
     // http://eslint.org/docs/rules/global-require
-    'global-require': 'error',
+    'global-require': 'warn',
 
     // enforces error handling in callbacks (node environment)
     'handle-callback-err': 'off',
@@ -18,7 +18,7 @@ module.exports = {
     'no-mixed-requires': ['off', false],
 
     // disallow use of new operator with the require function
-    'no-new-require': 'error',
+    'no-new-require': 'warn',
 
     // disallow string concatenation with __dirname and __filename
     // http://eslint.org/docs/rules/no-path-concat
@@ -36,4 +36,4 @@ module.exports = {
     // disallow use of synchronous methods (off by default)
     'no-sync': 'off',
   }
-};
+}
