@@ -142,7 +142,7 @@ module.exports = {
     }],
 
     // disallow use of multiple spaces
-    'no-multi-spaces': 'error',
+    'no-multi-spaces': 'warn',
 
     // disallow use of multiline strings
     'no-multi-str': 'off',
@@ -169,7 +169,7 @@ module.exports = {
     'no-param-reassign': 'warn',
 
     // disallow usage of __proto__ property
-    'no-proto': 'error',
+    'no-proto': 'warn',
 
     // disallow declaring the same variable more then once
     'no-redeclare': 'error',

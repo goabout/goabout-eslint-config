@@ -13,15 +13,39 @@ The main differences are
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint` and `eslint-plugin-import`.
 
+0. Install linter itself with npm
+```
+npm install eslint eslint-find-rules eslint-plugin-import babel-eslint --save-dev
+```
+
 1. Install the correct versions of each package using `npm` by adding in packages.json:
 
   ```
-    "goabout-eslint-config": "...path to github repo..." //Will be published to npm later
+    "goabout-eslint-config": "git+ssh://git@github.com/goabout/goabout-eslint-config" //Will be published to npm later
   ```
 
+  (And don't forget to run `npm install` afterwards)
 
-2. Add `"extends": "node_modules/goabout-eslint-config/index.js"` to your `.eslintrc`
 
+2. Add to your `.eslintrc`:
+
+
+```
+var path = require('path');
+
+module.exports = {
+  //Your own stuff above
+  extends: path.join(__dirname, "node_modules/goabout-eslint-config/index.js")
+}
+```
+
+## Using with command line
+
+You can enjoy real-time checks in atom by installing [linter-eslint](https://atom.io/packages/linter-eslint).
+
+## Using with atom
+
+You can enjoy real-time checks in atom by installing [linter-eslint](https://atom.io/packages/linter-eslint).
 
 ## Extending rules
 

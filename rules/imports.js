@@ -128,7 +128,7 @@ module.exports = {
 
     // Ensure consistent use of file extension within the import path
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-    'import/extensions': ['error', 'always', {
+    'import/extensions': ['warn', 'always', {
       js: 'never',
       jsx: 'never',
       vue: 'never'
@@ -144,11 +144,11 @@ module.exports = {
 
     // Require a newline after the last import/require in a group
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
-    'import/newline-after-import': 'error',
+    'import/newline-after-import': 'warn',
 
     // Require modules with a single export to use a default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-    'import/prefer-default-export': 'error',
+    'import/prefer-default-export': 'warn',
 
     // Restrict which files can be imported in a given folder
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
@@ -160,11 +160,11 @@ module.exports = {
 
     // Forbid import of modules using absolute paths
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
-    'import/no-absolute-path': 'error',
+    'import/no-absolute-path': 'warn',
 
     // Forbid require() calls with expressions
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
-    'import/no-dynamic-require': 'error',
+    'import/no-dynamic-require': 'warn',
 
     // prevent importing the submodules of other modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
@@ -181,7 +181,7 @@ module.exports = {
 
     // Forbid Webpack loader syntax in imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
-    'import/no-webpack-loader-syntax': 'error',
+    'import/no-webpack-loader-syntax': 'warn',
 
     // Prevent unassigned imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
@@ -190,6 +190,6 @@ module.exports = {
 
     // Prevent importing the default as if it were named
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
-    'import/no-named-default': 'error',
+    'import/no-named-default': 'warn',
   },
 }

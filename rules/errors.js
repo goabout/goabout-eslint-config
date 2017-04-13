@@ -28,7 +28,7 @@ module.exports = {
     'no-constant-condition': 'warn',
 
     // disallow control characters in regular expressions
-    'no-control-regex': 'error',
+    'no-control-regex': 'warn',
 
     // disallow use of debugger
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
