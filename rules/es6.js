@@ -97,13 +97,13 @@ module.exports = {
     }],
 
     // suggest using arrow functions as callbacks
-    'prefer-arrow-callback': ['error', {
+    'prefer-arrow-callback': ['warn', {
       allowNamedFunctions: false,
       allowUnboundThis: true,
     }],
 
     // suggest using of const declaration for variables that are never modified after declared
-    'prefer-const': ['error', {
+    'prefer-const': ['warn', {
       destructuring: 'any',
       ignoreReadBeforeAssign: true,
     }],
@@ -120,7 +120,7 @@ module.exports = {
 
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     // http://eslint.org/docs/rules/prefer-numeric-literals
-    'prefer-numeric-literals': 'error',
+    'prefer-numeric-literals': 'warn',
 
     // suggest using Reflect methods where applicable
     // http://eslint.org/docs/rules/prefer-reflect
@@ -141,7 +141,7 @@ module.exports = {
 
     // disallow generator functions that do not have yield
     // http://eslint.org/docs/rules/require-yield
-    'require-yield': 'warn',
+    'require-yield': 'off',
 
     // enforce spacing between object rest-spread
     // http://eslint.org/docs/rules/rest-spread-spacing

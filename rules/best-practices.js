@@ -15,12 +15,12 @@ module.exports = {
 
     // enforce that class methods use "this"
     // http://eslint.org/docs/rules/class-methods-use-this
-    'class-methods-use-this': ['warn', {
+    'class-methods-use-this': ['off', {
       exceptMethods: [],
     }],
 
     // require return statements to either always or never specify values
-    'consistent-return': 'error',
+    'consistent-return': 'warn',
 
     // specify curly brace conventions for all control statements
     curly: ['error', 'multi-line'],

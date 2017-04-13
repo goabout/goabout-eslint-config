@@ -175,7 +175,7 @@ module.exports = {
     'multiline-ternary': ['off', 'never'],
 
     // require a capital letter for constructors
-    'new-cap': ['error', {
+    'new-cap': ['warn', {
       newIsCap: true,
       newIsCapExceptions: [],
       capIsNew: false,
@@ -364,7 +364,7 @@ module.exports = {
 
     // require or disallow space before function opening parenthesis
     // http://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': ['error', {
+    'space-before-function-paren': ['warn', {
       anonymous: 'always',
       named: 'never',
       asyncArrow: 'always'

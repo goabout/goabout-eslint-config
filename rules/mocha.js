@@ -5,5 +5,9 @@ module.exports = {
     it: false,
     beforeEach: false,
     afterEach: false,
+    expect: false,
+    assert: false,
+    sandbox: false,
+    request: false
   }
 }
