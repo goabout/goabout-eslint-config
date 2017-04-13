@@ -145,7 +145,7 @@ module.exports = {
     'no-multi-spaces': 'error',
 
     // disallow use of multiline strings
-    'no-multi-str': 'error',
+    'no-multi-str': 'off',
 
     // disallow use of new operator when not part of the assignment or comparison
     'no-new': 'error',
@@ -166,19 +166,7 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
     // rule: http://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': ['warn', {
-      props: true,
-      ignorePropertyModificationsFor: [
-        'acc', // for reduce accumulators
-        'e', // for e.returnvalue
-        'ctx', // for Koa routing
-        'req', // for Express requests
-        'request', // for Express requests
-        'res', // for Express responses
-        'response', // for Express responses
-        '$scope', // for Angular 1 scopes
-      ]
-    }],
+    'no-param-reassign': 'warn',
 
     // disallow usage of __proto__ property
     'no-proto': 'error',
@@ -231,7 +219,7 @@ module.exports = {
     'no-unmodified-loop-condition': 'off',
 
     // disallow usage of expressions in statement position
-    'no-unused-expressions': ['error', {
+    'no-unused-expressions': ['warn', {
       allowShortCircuit: false,
       allowTernary: false,
       allowTaggedTemplates: false,
