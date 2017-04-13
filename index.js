@@ -7,6 +7,8 @@ module.exports = {
     './rules/variables',
     './rules/es6',
     './rules/imports',
+    './rules/adonis',
+    './rules/mocha',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2017,
@@ -18,4 +20,4 @@ module.exports = {
   rules: {
     strict: 'error',
   },
-};
+}

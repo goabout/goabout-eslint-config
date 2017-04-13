@@ -2,6 +2,11 @@
 
 This package provides GoAbout's base JS .eslintrc as an extensible shared config. It uses [AirBnB's config](https://github.com/airbnb/javascript) as a base with a few differences.
 
+The main differences are
+
+* semicolons are not necessary;
+* Most errors changed to warnings. Because "errors" prevent webpack-compiled code from running and hence provide unnecessary point of distraction while writing the code. Warnings are still visible and can be fixed later;
+
 ## Usage
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint` and `eslint-plugin-import`.

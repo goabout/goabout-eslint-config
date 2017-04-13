@@ -21,7 +21,7 @@ module.exports = {
 
     // require parens in arrow function arguments
     // http://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'as-needed', {
+    'arrow-parens': ['warn', 'as-needed', {
       requireForBlockBody: true,
     }],
 
@@ -34,7 +34,7 @@ module.exports = {
 
     // enforce the spacing around the * in generator functions
     // http://eslint.org/docs/rules/generator-star-spacing
-    'generator-star-spacing': ['error', { before: false, after: true }],
+    'generator-star-spacing': ['warn', { before: false, after: true }],
 
     // disallow modifying variables of class declarations
     // http://eslint.org/docs/rules/no-class-assign
@@ -141,7 +141,7 @@ module.exports = {
 
     // disallow generator functions that do not have yield
     // http://eslint.org/docs/rules/require-yield
-    'require-yield': 'error',
+    'require-yield': 'warn',
 
     // enforce spacing between object rest-spread
     // http://eslint.org/docs/rules/rest-spread-spacing
@@ -167,4 +167,4 @@ module.exports = {
     // http://eslint.org/docs/rules/yield-star-spacing
     'yield-star-spacing': ['error', 'after']
   }
-};
+}

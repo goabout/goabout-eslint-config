@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-airbnb-base",
-  "version": "11.1.3",
-  "description": "Airbnb's base JS ESLint config, following our styleguide",
+  "name": "goabout-eslint-config",
+  "version": "1.0.0",
+  "description": "GoAbout's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
@@ -14,17 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/goabout/goabout-eslint-config"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "config",
     "airbnb",
+    "goabout",
     "javascript",
     "styleguide"
   ],
-  "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
+  "author": "Artem Golovin (https://artemgolovin.com)",
   "contributors": [
     {
       "name": "Jake Teton-Landis",
@@ -38,13 +39,16 @@
     {
       "name": "Harrison Shoff",
       "url": "https://twitter.com/hshoff"
+    },
+    {
+      "name": "Artem Golovin",
+      "url": "https://artemgolovin.com"
     }
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/airbnb/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript",
   "devDependencies": {
     "babel-preset-airbnb": "^2.2.3",
     "babel-tape-runner": "^2.0.1",

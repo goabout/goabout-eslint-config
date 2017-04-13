@@ -1,12 +1,12 @@
 module.exports = {
   rules: {
     // require trailing commas in multiline object literals
-    'comma-dangle': ['error', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'always-multiline',
+    'comma-dangle': ['warn', {
+      arrays: 'only-multiline',
+      objects: 'only-multiline',
+      imports: 'only-multiline',
+      exports: 'only-multiline',
+      functions: 'only-multiline',
     }],
 
     // Disallow await inside of loops
@@ -31,7 +31,7 @@ module.exports = {
     'no-control-regex': 'error',
 
     // disallow use of debugger
-    'no-debugger': 'error',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
 
     // disallow duplicate arguments in functions
     'no-dupe-args': 'error',
@@ -124,4 +124,4 @@ module.exports = {
     // http://eslint.org/docs/rules/valid-typeof
     'valid-typeof': ['error', { requireStringLiterals: true }],
   }
-};
+}
