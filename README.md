@@ -21,7 +21,7 @@ npm install eslint eslint-find-rules eslint-plugin-import babel-eslint --save-de
 1. Install the correct versions of each package using `npm` by adding in packages.json:
 
   ```
-    "goabout-eslint-config": "git+ssh://git@github.com/goabout/goabout-eslint-config" //Will be published to npm later
+    "goabout-eslint-config": "git+https://github.com/goabout/goabout-eslint-config.git" //Will be published to npm later
   ```
 
   (And don't forget to run `npm install` afterwards)

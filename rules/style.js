@@ -142,7 +142,7 @@ module.exports = {
     // http://eslint.org/docs/rules/max-len
     'max-len': ['warn', 300, 2, {
       ignoreUrls: true,
-      ignoreComments: false,
+      ignoreComments: true,
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
@@ -195,7 +195,7 @@ module.exports = {
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain
     // http://eslint.org/docs/rules/newline-per-chained-call
-    'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 4 }],
+    'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 10 }],
 
     // disallow use of the Array constructor
     'no-array-constructor': 'warn',
