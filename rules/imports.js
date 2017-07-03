@@ -128,11 +128,7 @@ module.exports = {
 
     // Ensure consistent use of file extension within the import path
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-    'import/extensions': ['warn', 'always', {
-      js: 'never',
-      jsx: 'never',
-      vue: 'never'
-    }],
+    'import/extensions': ['warn', 'never'],
 
     // Enforce a convention in module import order
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md

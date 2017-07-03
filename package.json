@@ -60,7 +60,7 @@
     "safe-publish-latest": "^1.1.1",
     "tape": "^4.6.3"
   },
-  "peerDependencies": {
+  "dependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0"
   },
