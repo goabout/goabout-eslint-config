@@ -4,13 +4,7 @@
   "description": "GoAbout's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "prelint": "editorconfig-tools check * rules/* test/*",
-    "lint": "eslint .",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
-    "pretest": "npm run --silent lint",
-    "test": "npm run --silent tests-only",
-    "travis": "npm run --silent test"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -46,23 +40,11 @@
     }
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
-  },
-  "devDependencies": {
-    "babel-preset-airbnb": "^2.2.3",
-    "babel-tape-runner": "^2.0.1",
-    "editorconfig-tools": "^0.1.1",
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-import": "^2.2.0",
-    "in-publish": "^2.0.0",
-    "safe-publish-latest": "^1.1.1",
-    "tape": "^4.6.3"
-  },
   "dependencies": {
     "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-find-rules": "^1.14.3",
+    "babel-eslint": "^7.2.2"
   },
   "engines": {
     "node": ">= 4"
