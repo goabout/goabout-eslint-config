@@ -41,10 +41,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-find-rules": "^1.14.3",
-    "babel-eslint": "^7.2.2"
+    
   },
   "engines": {
     "node": ">= 4"
